@@ -1,0 +1,150 @@
+<!DOCKTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey-form</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1 id="title">FreeCode Camp</h1>
+    <p id="description">Aprendiendo a codificar</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Nombre <input id="name" type="text" placeholder="ingrese nombre" required></label>
+         <label for="email" id="email-label">Email <input id="email" type="email" placeholder="ingrese email" required/></label>
+         <label for="number" id="number-label">edad(opcional) <input id="number" type="number" min="13" max="66" placeholder="edad" required/></label>
+      </fieldset>
+      <fieldset>
+        <p>Que tipo de usuario es?</p>
+        <label for="usuario">
+          <select id="dropdown">
+            <option value="">(seleccione tipo de usuario)</option>
+                <option value="1">Estudiante</option>
+                <option value="2">Trabajador</option>
+                <option value="3">Profesor</option>
+                <option value="4">Prefiero no decir</option>
+                <option value="5">Otro</option>
+          </select>
+        </label>
+        <p>recomendarias FreeCodeCamp a tus amigos?</p>
+        <label for="Recomendaria">
+                    <input type="radio" name="si-talvez-no" class="inline" value="si" /> Recomendaria
+                </label>
+        <label for="quizas">
+                    <input type="radio" name="si-talvez-no" class="inline"  value="talvez"/> tal vez recomendaria
+                </label>
+        <label for="no">
+                    <input type="radio" name="si-talvez-no" class="inline" value="no" /> no recomendaria
+                </label>
+      </fieldset>
+      <fieldset>
+        <p>Que es lo que te gusta de FreeCodeCamp?</p>
+        <label for="eleccion">
+          <select id="eleccion">
+            <option value="">(seleccione una opcion)</option>
+            <option value="1">Desafios</option>
+            <option value="2">Proyectos</option>
+            <option value="3">Comunidad</option>
+            <option value="4">Libre Acceso</option>
+          </select>
+        </label>
+        <p>¿Qué te gustaría ver mejorado? (Marque todo lo que corresponda)</p>
+        <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Front-end Projects</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Back-end Projects</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+            />Data Visualization</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            />Challenges</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="open-source-community"
+              type="checkbox"
+              class="input-checkbox"
+            />Open Source Community</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="gitter-help-rooms"
+              type="checkbox"
+              class="input-checkbox"
+            />Gitter help rooms</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="videos"
+              type="checkbox"
+              class="input-checkbox"
+            />Videos</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="city-meetups"
+              type="checkbox"
+              class="input-checkbox"
+            />City Meetups</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="wiki"
+              type="checkbox"
+              class="input-checkbox"
+            />Wiki</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="forum"
+              type="checkbox"
+              class="input-checkbox"
+            />Forum</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="additional-courses"
+              type="checkbox"
+              class="input-checkbox"
+            />Additional Courses</label
+          >
+      </fieldset>
+      <fieldset>
+        <p>Comentarios y Sugerencias</p>
+        <label for="bio" >
+                    <textarea name="text" id="bio" cols="30" rows="3" placeholder="ingrese su comentario" ></textarea>
+                </label>
+      </fieldset>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
